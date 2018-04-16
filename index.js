@@ -23,8 +23,8 @@ const outputDir = path.join(__dirname, 'docs');
             const daysLine = calendar[0].split(',');
             const dayArray = daysLine.slice(3)
                 .map((day) => {
-                    return moment('1899-12-31', 'YYYY-MM-DD')
-                        .add(day, 'days').format('YYYY/M/d ddd');
+                    return moment('1899-12-30', 'YYYY-MM-DD')
+                        .add(day, 'days').format('YYYY/MM/DD ddd');
                 });
             const garbageDaysLines = calendar.slice(1);
             const garbageDays = [];
